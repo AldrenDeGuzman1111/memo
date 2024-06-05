@@ -54,8 +54,9 @@ spring.jpa.hibernate.ddl-auto=update
 Install any webservice tool for sending request like postman to help you test. Use this as a Reference for sample Request to create a note:
 ```bash
 {
-    "note":"sample Updates",
-    "createdBy":"aya"
+    "title":"Test Notes aldren",
+    "note":"sample Updates of notes: the quick brown fox jumps over the lazy dog.",
+    "createdBy":"Aldren"
 }
 ```
 
@@ -64,6 +65,18 @@ To test your sample application directly in the terminal, enter the following co
     mvn spring-boot:run
 
 This will run the application with the JVM arguments specified in your [pom.xml](pom.xml) (check the configuration comment under `spring-boot-maven-plugin`.)
+
+**URL** after running the application in you local use any browser and put this URL on your address bar or you can use your webservice tool:
+```bash
+URL: http://localhost:8080/memo-api/
+
+ENDPOINTS:
+· POST /notes: Create a new note.
+· GET /notes: Retrieve all notes.
+· GET /notes/:id: Retrieve a specific note by ID.
+· PUT /notes/:id: Update a specific note.
+· DELETE /notes/:id: Delete a specific note.
+```
 
 To package the sample app into a runnable JAR file, enter the following command:
 
