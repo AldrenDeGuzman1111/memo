@@ -13,6 +13,20 @@ This setup ensures a structured and modular approach to developing a RESTful API
 **NOTE:**
 no need to install other application for sql lite the library from maven will autmatically create the DB if it's not existing
 
+# Requirements:
+
+1. API Endpoints:
+```bash
+· **POST** /notes: Create a new note.
+· **GET** /notes: Retrieve all notes.
+· **GET** /notes/:id: Retrieve a specific note by ID.
+· **PUT** /notes/:id: Update a specific note.
+· **DELETE** /notes/:id: Delete a specific note.
+```
+2. Data Storage: Use an in-memory array or a simple file-based solution to store notes.
+3. Data Validation: Validate input data for creating and updating notes.
+4. Error Handling: Basic error handling for common scenarios (e.g., note not found).
+   
 ## Configure SQLite Database
 Add the SQLite dependency in your pom.xml:
 ```bash
