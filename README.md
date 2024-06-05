@@ -70,18 +70,6 @@ To test your sample application directly in the terminal, enter the following co
 
 This will run the application with the JVM arguments specified in your [pom.xml](pom.xml) (check the configuration comment under `spring-boot-maven-plugin`.)
 
-**URL** after running the application in you local use any browser and put this URL on your address bar or you can use your webservice tool:
-```bash
-URL: http://localhost:8080/memo-api/
-
-ENDPOINTS:
-· POST /notes: Create a new note.
-· GET /notes: Retrieve all notes.
-· GET /notes/:id: Retrieve a specific note by ID.
-· PUT /notes/:id: Update a specific note.
-· DELETE /notes/:id: Delete a specific note.
-```
-
 To package the sample app into a runnable JAR file, enter the following command:
 
     mvn package
@@ -97,6 +85,18 @@ Applications run using `java -jar ...` do not use the JVM arguments listed in `p
     java -Xmx2048m -Xdebug -DargumentName=someValue -jar <path to your JAR file>
 
 Once the app has started: go to your web browser, type `localhost:8080` into the address bar, and play around with the webpages.
+
+**URL** after running the application in you local use any browser and put this URL on your address bar or you can use your webservice tool:
+```bash
+URL: http://localhost:8080/memo-api/
+
+ENDPOINTS:
+· POST /notes: Create a new note.
+· GET /notes: Retrieve all notes.
+· GET /notes/:id: Retrieve a specific note by ID.
+· PUT /notes/:id: Update a specific note.
+· DELETE /notes/:id: Delete a specific note.
+```
 
 To stop the app, use `Ctrl + C` in the terminal.
 
