@@ -54,8 +54,9 @@ spring.jpa.hibernate.ddl-auto=update
 Install any webservice tool for sending request like postman to help you test. Use this as a Reference for sample Request to create a note:
 ```bash
 {
-    "note":"sample Updates",
-    "createdBy":"aya"
+    "title":"Test Notes aldren",
+    "note":"sample Updates of notes: the quick brown fox jumps over the lazy dog.",
+    "createdBy":"Aldren"
 }
 ```
 
