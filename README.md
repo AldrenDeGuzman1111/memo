@@ -66,7 +66,7 @@ To test your sample application directly in the terminal, enter the following co
 
 This will run the application with the JVM arguments specified in your [pom.xml](pom.xml) (check the configuration comment under `spring-boot-maven-plugin`.)
 
-***URL** adfter running the applicationm in you local use any browser and put this URL on your address bar:
+**URL** after running the application in you local use any browser and put this URL on your address bar or you can use your webservice tool:
 ```bash
 URL: http://localhost:8080/memo-api/
 
