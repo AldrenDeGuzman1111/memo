@@ -13,7 +13,7 @@ This setup ensures a structured and modular approach to developing a RESTful API
 **NOTE:**
 no need to install other application for sql lite the library from maven will autmatically create the DB if it's not existing
 
-##Configure SQLite Database
+## Configure SQLite Database
 Add the SQLite dependency in your pom.xml:
 ```bash
 <dependency>
@@ -37,18 +37,13 @@ spring.jpa.hibernate.ddl-auto=update
  ## **Try the sample application**
 
 
-In your terminal, `cd` into the root directory of your local repository. Set the `SPRING_PROFILES_ACTIVE` environment variable with
-the appropriate Spring profile name. For our example, we will use the `local` profile:
+In your terminal, `cd` into the root directory of your local repository. Use this as a Reference for sample Request to create a note:
 ```bash
-# On a -nix based OS
-> export SPRING_PROFILES_ACTIVE=local
-
-# In a Windows command prompt where you will run mvn:
-> set SPRING_PROFILES_ACTIVE=local
+{
+    "note":"sample Updates",
+    "createdBy":"aya"
+}
 ```
-Other profiles include `non-prod` and `production` - these profiles can be used to switch between different configurations for the app. For example, `local` displays
-logs in the console, whereas `non-prod` and `production` sends logs to your GCP project's Stackdriver service. The [logging readme](docs/logging-java.md) has a guide
-to help you locate the log entries in  our GCP project.
 
 To test your sample application directly in the terminal, enter the following command:
 
@@ -78,9 +73,6 @@ To package the app again after having made changes, run:
 
     mvn clean
     mvn package
-
-See [TMF 630 Spectral Linting](docs/tmf-linting.md) for details, to generate/update swagger file (.oas2.yml), run:
-
     mvn install
    
 or
