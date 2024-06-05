@@ -26,7 +26,11 @@ no need to install other application for sql lite the library from maven will au
 2. Data Storage: Use an in-memory array or a simple file-based solution to store notes.
 3. Data Validation: Validate input data for creating and updating notes.
 4. Error Handling: Basic error handling for common scenarios (e.g., note not found).
-   
+
+## validation:
+
+BAD REQUEST Error is either the required field(Title,note) is empty or missing or the String length exceeded 255 characters
+
 ## Configure SQLite Database
 Add the SQLite dependency in your pom.xml:
 ```bash
