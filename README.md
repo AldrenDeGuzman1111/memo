@@ -15,10 +15,24 @@ no need to install other application for sql lite the library from maven will au
 
 ##Configure SQLite Database
 Add the SQLite dependency in your pom.xml:
-![image](https://github.com/AldrenDeGuzman1111/memo/assets/171792343/246e63c8-3b01-41bb-a93f-8c794ca4c16d)
+```bash
+<dependency>
+    <groupId>org.xerial</groupId>
+    <artifactId>sqlite-jdbc</artifactId>
+    <version>3.36.0.3</version>
+</dependency>
+```
 
 Configure the application.properties file to use SQLite as the database:
-![image](https://github.com/AldrenDeGuzman1111/memo/assets/171792343/b41cbecd-d3ef-4dfb-93e5-58e264cbed0a)
+```bash
+spring.datasource.url=jdbc:sqlite:memodb.db
+spring.datasource.driver-class-name=org.sqlite.JDBC
+spring.datasource.username=
+spring.datasource.password=
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.SQLiteDialect
+spring.jpa.show-sql=true
+spring.jpa.hibernate.ddl-auto=update
+```
 
  ## **Try the sample application**
 
@@ -34,7 +48,7 @@ the appropriate Spring profile name. For our example, we will use the `local` pr
 ```
 Other profiles include `non-prod` and `production` - these profiles can be used to switch between different configurations for the app. For example, `local` displays
 logs in the console, whereas `non-prod` and `production` sends logs to your GCP project's Stackdriver service. The [logging readme](docs/logging-java.md) has a guide
-to help you locate the log entries in your GCP project.
+to help you locate the log entries in  our GCP project.
 
 To test your sample application directly in the terminal, enter the following command:
 
