@@ -44,11 +44,17 @@ public final class MainController {
 	
     @PostMapping("/notes")
     public ResponseEntity<MemoDTO> createMemo(@RequestBody MemoRequest request) {
+    	if("".equals(request.getTitle()) || "".equals(request.getNote())){
+    		return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+    	}
         return new ResponseEntity<>(memoSvc.createMemo(request), HttpStatus.CREATED);
     }
     
     @PutMapping("/notes/{id}")
     public ResponseEntity<MemoDTO> updateMemo(@PathVariable("id") Long id, @RequestBody MemoRequest request) {
+    	if("".equals(request.getTitle()) || "".equals(request.getNote())){
+    		return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+    	}
         MemoDTO memoDto = memoSvc.updateMemo(id, request);
         if (null == memoDto) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
