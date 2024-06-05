@@ -14,6 +14,7 @@ import lombok.NoArgsConstructor;
 public class MemoDTO implements Serializable {
 	
 	private Long id;
+	private String title;
 	private String note;
 	private String createdBy;
 

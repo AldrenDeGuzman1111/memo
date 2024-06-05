@@ -24,6 +24,9 @@ public final class MemoEntity {
 	private Long id;
 
 	@Column
+	private String title;
+	
+	@Column
 	private String note;
 
 	@Column

@@ -10,6 +10,7 @@ import lombok.Data;
 public class MemoRequest implements Serializable{
 
 	private Long id;
+	private String title;
 	private String note;
 	private String createdBy;
 }

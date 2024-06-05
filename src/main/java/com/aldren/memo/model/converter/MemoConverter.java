@@ -15,6 +15,7 @@ public final class MemoConverter {
 		} else {
 			return MemoDTO.builder()
 					.id(memo.getId())
+					.title(memo.getTitle())
 					.note(memo.getNote())
 					.createdBy(memo.getCreatedBy()).build();
 		}
@@ -26,6 +27,7 @@ public final class MemoConverter {
 		} else {
 			return MemoEntity.builder()
 					.id(req.getId())
+					.title(req.getTitle())
 					.note(req.getNote())
 					.createdBy(req.getCreatedBy()).build();
 		}
