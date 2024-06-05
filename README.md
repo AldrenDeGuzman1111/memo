@@ -37,7 +37,7 @@ spring.jpa.hibernate.ddl-auto=update
  ## **Try the sample application**
 
 
-In your terminal, `cd` into the root directory of your local repository. Use this as a Reference for sample Request to create a note:
+Install any webservice tool for sending request like postman to help you test. Use this as a Reference for sample Request to create a note:
 ```bash
 {
     "note":"sample Updates",
