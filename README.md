@@ -1,5 +1,4 @@
-
-#Summary Note taker
+# Summary Note taker
 This guide provided a step-by-step process to create a CRUD API for managing memos using Spring Boot and SQLite. Here are the key components:
 
 1. **Setup**: Created a new Spring Boot project and added dependencies.
@@ -21,5 +20,5 @@ Add the SQLite dependency in your pom.xml:
 Configure the application.properties file to use SQLite as the database:
 ![image](https://github.com/AldrenDeGuzman1111/memo/assets/171792343/b41cbecd-d3ef-4dfb-93e5-58e264cbed0a)
 
-#Running the application
+## Running the application
 
