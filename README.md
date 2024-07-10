@@ -110,4 +110,4 @@ or
 
     mvn verify
 
- ##**For more Info go to the wiki page**
+ # For more Info go to the wiki page
